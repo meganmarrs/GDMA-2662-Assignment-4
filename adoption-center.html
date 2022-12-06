@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
-<title>Home Page</title>
+<title>Adoption Center</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Anaheim&display=swap" rel="stylesheet">
@@ -17,24 +17,24 @@
         <div> <!--BG-ORANGE-->
             <div class="wrapper row">
                 <div class="col-lg-4"> <!--col classes-->
-                    <p><a href="#"><img src="" alt="RUFF Rescue"></a></p>
+                    <a href="index.html"><img src="./img/logo-ruff-rescue.png" alt="RUFF Rescue"></a>
                 </div>
     
                 <nav class="col-lg-7"> <!--col classes-->
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li><span></span></li> <!--FONT-AWESOME-->
+                        <li><a href="index.html #about-us">About Us</a></li>
+                        <li><a href="#">Adoption Center</a></li> 
+                        <li><a href="#get-involved">Get Involved</a></li>
+                        <li><a href="#news-events">News &amp; Events</a></li>
+                        <li><a href="#"><span class="fa-regular fa-user"></span></a></li> <!--FONT-AWESOME--> 
                     </ul>
                 </nav>
             </div>
         </div>
 
         <div> <!--BG-CREAM-->
-            <div class="col-lg-4">
-                <h1></h1> <!--UPPERCASE-->
+            <div class="wrapper">
+                <h1>Adopt A Dog!</h1> <!--UPPERCASE-->
             </div>
         </div>
     </header>
@@ -44,27 +44,28 @@
             <form>
                 <legend>Filter</legend>
 
-                <label for="gender"></label> <!--UPPERCASE-->
-                <select name="gender" id="gender">
+                <label for="gender">Gender</label> <!--UPPERCASE-->
+                <select name="gender" id="gender" class="col-lg-3"> <!--col classes-->
                     <option value="">Male</option>
                     <option value="">Female</option>
                 </select>
 
-                <label for="breed"></label> <!--UPPERCASE--> <!--How many BREED options should I have???-->
-                <select name="breed" id="breed">
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
-
-                <label for="size"></label> <!--UPPERCASE--> <!--How many SIZE options should I have???-->
-                <select name="size" id="size">
+                <label for="breed">Breed</label> <!--UPPERCASE--> <!--How many BREED options should I have???-->
+                <select name="breed" id="breed" class="col-lg-3"> <!--col classes-->
                     <option value=""></option>
                     <option value=""></option>
                     <option value=""></option>
                 </select>
 
-                <label for="age"></label> <!--UPPERCASE--> <!--How many AGE options should I have???-->
-                <select name="age" id="age">
+                <label for="size">Size</label> <!--UPPERCASE--> <!--How many SIZE options should I have???-->
+                <select name="size" id="size" class="col-lg-3"> <!--col classes-->
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+
+                <label for="age">Age</label> <!--UPPERCASE--> <!--How many AGE options should I have???-->
+                <select name="age" id="age" class="col-lg-3"> <!--col classes-->
                     <option value=""></option>
                     <option value=""></option>
                     <option value=""></option>
@@ -72,97 +73,96 @@
             </form>
         </div>
 
-        <div> <!--BG-ORANGE-->
-            <div class="wrapper row">  <!--Where should I put row on divs around all or row on divs around specific 2 boxes???-->
-                <div class="row">
-                    <section class="col-lg-5"> <!--col classes--> <!--BG-CREAM-->
-                        <div></div> <!--IMG-->
-                        <header>
-                            <h2></h2>
-                            <p></p>
-                        </header>
-                        <p><a href=""></a></p> <!--BUTTON-->
-                    </section>
+        <div class="wrapper">
+            <div class="row">
+                <section class="col-lg-5"> <!--col classes--> <!--BG-CREAM-->
+                    <div></div> <!--IMG-->
+                    <header>
+                        <h2>Tucker</h2>  <!--UPPERCASE-->
+                        <p><span>Male</span> | 5 years old</p>
+                    </header>
+                    <p><a href="">Read More</a></p> <!--BUTTON-->
+                </section>
 
-                    <section class="col-lg-5"> <!--col classes--> <!--BG-CREAM-->
-                        <div></div> <!--IMG-->
-                        <header>
-                            <h2></h2>
-                            <p></p>
-                        </header>
-                        <p><a href=""></a></p> <!--BUTTON-->
-                    </section>
-                </div>
+                <section class="col-lg-5"> <!--col classes--> <!--BG-CREAM-->
+                    <div></div> <!--IMG-->
+                    <header>
+                        <h2>Tory</h2> <!--UPPERCASE-->
+                        <p><span>Female</span> | 1.5 years old</p>   
+                    </header>
+                    <p><a href="">Read More</a></p> <!--BUTTON-->
+                </section>
+            </div>
 
-                <div class="row">
-                    <section class="col-lg-5"> <!--col classes--> <!--BG-CREAM-->
-                        <div></div> <!--IMG-->
-                        <header>
-                            <h2></h2>
-                            <p></p>
-                        </header>
-                        <p><a href=""></a></p> <!--BUTTON-->
-                    </section>
+            <div class="row">
+                <section class="col-lg-5"> <!--col classes--> <!--BG-CREAM-->
+                    <div></div> <!--IMG-->
+                    <header>
+                        <h2>Inky</h2> <!--UPPERCASE-->  
+                        <p><span>Male</span> | 3 years old</p>
+                    </header>
+                    <p><a href="">Read More</a></p> <!--BUTTON-->
+                </section>
 
-                    <section class="col-lg-5"> <!--col classes--> <!--BG-CREAM-->
-                        <div></div> <!--IMG-->
-                        <header>
-                            <h2></h2>
-                            <p></p>
-                        </header>
-                        <p><a href=""></a></p> <!--BUTTON-->
-                    </section>
-                </div>
+                <section class="col-lg-5"> <!--col classes--> <!--BG-CREAM-->
+                    <div></div> <!--IMG-->
+                    <header>
+                        <h2>Pebbles</h2>   <!--UPPERCASE--> 
+                        <p><span>Female</span> | 6 years old</p>
+                    </header>
+                    <p><a href="">Read More</a></p> <!--BUTTON-->
+                </section>
+            </div>
 
-                <div class="row">
-                    <section class="col-lg-5"> <!--col classes--> <!--BG-CREAM-->
-                        <div></div> <!--IMG-->
-                        <header>
-                            <h2></h2>
-                            <p></p>
-                        </header>
-                        <p><a href=""></a></p> <!--BUTTON-->
-                    </section>
+            <div class="row">
+                <section class="col-lg-5"> <!--col classes--> <!--BG-CREAM-->
+                    <div></div> <!--IMG-->
+                    <header>
+                        <h2>Bam Bam</h2>     <!--UPPERCASE-->
+                        <p> <span>Male</span> | 6 years old</p>
+                    </header>
+                    <p><a href="">Read More</a></p> <!--BUTTON-->
+                </section>
 
-                    <section class="col-lg-5"> <!--col classes--> <!--BG-CREAM-->
-                        <div></div> <!--IMG-->
-                        <header>
-                            <h2></h2>
-                            <p></p>
-                        </header>
-                        <p><a href=""></a></p> <!--BUTTON-->
-                    </section>
-                </div>
+                <section class="col-lg-5"> <!--col classes--> <!--BG-CREAM-->
+                    <div></div> <!--IMG-->
+                    <header>
+                        <h2>Charlie</h2>   <!--UPPERCASE-->  
+                        <p><span>Male</span> | 7 years old</p>
+                    </header>
+                    <p><a href="">Read More</a></p> <!--BUTTON-->
+                </section>
             </div>
         </div>
 
-        <div> <!--BG-TEAL-->
+
+        <div id="get-involved"> <!--BG-TEAL-->
             <div class="wrapper row">
                 <section class=" col-lg-4"> <!--col classes-->
                     <div></div> <!--IMG--> 
                     <header>
-                        <h2></h2>
+                        <h2>Donate</h2> <!--UPPERCASE-->
                     </header>
-                    <p></p>
-                    <p><a href=""></a></p> <!--BUTTON-->
+                    <p>You can help us make an even greater impact by donating items through Wish List or adopting a pet from a shelter or rescue near you.</p>
+                    <p><a href="">Donate</a></p> <!--BUTTON-->
                 </section> 
                 
                 <section class=" col-lg-4"> <!--col classes-->
                     <div></div> <!--IMG-->
-                    <header>
-                        <h2></h2>
+                    <header> 
+                        <h2>Volunteer</h2> <!--UPPERCASE-->
                     </header>
-                    <p></p>
-                    <p><a href=""></a></p> <!--BUTTON-->
+                    <p> We welcome and respect our volunteers' unique identities, diverse backgrounds and experiences to build an inclusive animal welfare movement.</p>
+                    <p><a href="">Volunteer</a></p> <!--BUTTON-->
                 </section>
 
                 <section class=" col-lg-4"> <!--col classes-->
                     <div></div> <!--IMG-->
                     <header>
-                        <h2></h2>
+                        <h2>Foster</h2> <!--UPPERCASE-->  
                     </header>
-                    <p></p>
-                    <p><a href=""></a></p> <!--BUTTON-->
+                    <p>If we learn of an animal in need, we will respond if we are at all able. We do not have a shelter/sanctuary or facility, so foster families are extremely valuable to our rescue.</p>
+                    <p><a href="">Foster</a></p> <!--BUTTON-->
                 </section> 
             </div>
         </div>
@@ -170,19 +170,19 @@
 
     <footer> <!--BG-CREAM-->
         <div class="wrapper row">
-            <address class="col-lg-2"> <!--col classes-->
-                <h3></h3>
+            <address class="col-lg-4"> <!--col classes-->
+                <h3>Contact Us</h3>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li> <!--EMAIL-->
+                    <li>R.u.F.F. Rescue, Inc.</li>  
+                    <li>Faith Jones, President</li>
+                    <li><a href="mailto:faith@ruff-rescue.com">faith@ruff-rescue.com</a><br></li> <!--EMAIL-->
                 </ul>
             </address>
 
-            <section>
-                <h2></h2>
-                <p></p>
-            </section>
+            <section class="col-lg-8" id="news-events">
+                <h3>Events</h3> <!--UPPERCASE-->
+                <p>Pick-A-Pooch Ralston Arena, 7300 Q Street, Ralston, NE 7/21/2019 10:00AM &ndash; 4:00PM</p>
+            </section>  
         </div>
     </footer>
 

@@ -12,6 +12,10 @@
 5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
         - Framework
 6.0 - Components: specific designed components
+        - Navagation
+        - Hero
+        - Footer
+     
 7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
         - Alignment	
 --------------------------------------------------------------*/
@@ -23,7 +27,7 @@
 *,
 *:after,
 *:before {
-        font-family: 'Amatic SC', cursive;
+        font-family: 'Anaheim', sans-serif;
         -o-box-sizing: border-box;
         -ms-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -33,7 +37,7 @@
 
 html {
         font-size: 1.5rem;
-        font-family: 'Anaheim', sans-serif;/* ----- set font-size in font-shorthand ----- */
+        font-family: 'Amatic SC', cursive; /* ----- set font-size in font-shorthand ----- */
 }
 
 @media screen and (min-width: 768px) {
@@ -50,6 +54,11 @@ html {
 /*--------------------------------------------------------------
     4.0 - ELEMENTS
 -------------------------------------------------------------- */
+
+
+
+
+
 
 
 
@@ -255,6 +264,159 @@ html {
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
 
+#about-us div:first-child {
+        background: url(../img/bg-two-people-dogs.jpg) no-repeat center;
+        -moz-background-size: contain;
+        -webkit-background-size: contain;
+        -o-background-size: contain;
+        -ms-background-size: contain;
+        background-size: contain;
+}
+
+#get-involved section:first-child div {
+        background: url(../img/illustration-donate.png) no-repeat center;
+        -moz-background-size: contain;
+        -webkit-background-size: contain;
+        -o-background-size: contain;
+        -ms-background-size: contain;
+        background-size: contain;
+        padding: 4rem;
+}
+
+#get-involved section:nth-child(2) div {
+        background: url(../img/illustration-volenteer.png) no-repeat center;
+        -moz-background-size: contain;
+        -webkit-background-size: contain;
+        -o-background-size: contain;
+        -ms-background-size: contain;
+        background-size: contain;
+        padding: 4rem;
+
+}
+
+#get-involved section:last-child div {
+        background: url(../img/illustration-foster.png) no-repeat center;
+        -moz-background-size: contain;
+        -webkit-background-size: contain;
+        -o-background-size: contain;
+        -ms-background-size: contain;
+        background-size: contain;
+        padding: 5rem;
+}
+
+
+
+
+main div:nth-child(2) div:first-child section:first-child div {
+        background: url(../img/dog-tucker.jpg) no-repeat center;
+        -moz-background-size: contain;
+        -webkit-background-size: contain;
+        -o-background-size: contain;
+        -ms-background-size: contain;
+        background-size: contain;
+        padding: 4.5rem;
+}
+
+main div:nth-child(2) div:first-child section:last-child div {
+        background: url(../img/dog-tory.jpg) no-repeat center;
+        -moz-background-size: contain;
+        -webkit-background-size: contain;
+        -o-background-size: contain;
+        -ms-background-size: contain;
+        background-size: contain;
+        padding: 4.5rem;
+}      
+
+main div:nth-child(2) div:nth-child(2) section:first-child div {
+        background: url(../img/dog-inky.jpg) no-repeat center;
+        -moz-background-size: contain;
+        -webkit-background-size: contain;
+        -o-background-size: contain;
+        -ms-background-size: contain;
+        background-size: contain;
+        padding: 4.5rem;
+}      
+
+main div:nth-child(2) div:nth-child(2) section:last-child div {
+        background: url(../img/dog-pebbles.jpg) no-repeat center;
+        -moz-background-size: contain;
+        -webkit-background-size: contain;
+        -o-background-size: contain;
+        -ms-background-size: contain;
+        background-size: contain;
+        padding: 4.5rem;
+}
+
+
+main div:nth-child(2) section:first-child div {
+        background: url(../img/dog-bam-bam.jpg) no-repeat center;
+        -moz-background-size: contain;
+        -webkit-background-size: contain;
+        -o-background-size: contain;
+        -ms-background-size: contain;
+        background-size: contain;
+        padding: 4.5rem;
+}
+
+main div:nth-child(2) section:last-child div {
+        background: url(../img/dog-charlie.jpg) no-repeat center;
+        -moz-background-size: contain;
+        -webkit-background-size: contain;
+        -o-background-size: contain;
+        -ms-background-size: contain;
+        background-size: contain;
+        padding: 4.5rem;
+}
+
+
+
+
+
+
+
+/* --NAVAGATION-- */
+nav a {
+        color: #fff;
+}
+
+a {
+        color: #000;
+        text-decoration: none;
+}
+
+ul {
+        padding-left: 0;
+}
+
+li {
+        list-style-type: none;
+}
+
+address a {
+        color: #000;
+        text-decoration: none;
+}
+
+
+
+
+
+
+
+/* --HERO-- */
+body > header {
+        background: url(../img/hero-golden-puppy.jpg) no-repeat center;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+        padding-bottom: 3em;
+}
+
+
+
+/* --FOOTER-- */
 
 
 /*--------------------------------------------------------------
