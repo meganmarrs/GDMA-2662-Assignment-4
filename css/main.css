@@ -15,6 +15,7 @@
         - Navagation
         - Hero
         - Footer
+        - Form
      
 7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
         - Alignment	
@@ -54,9 +55,11 @@ html {
 /*--------------------------------------------------------------
     4.0 - ELEMENTS
 -------------------------------------------------------------- */
-
-
-
+h1,
+h2,
+h3 {
+        text-transform: uppercase;
+}
 
 
 
@@ -264,13 +267,66 @@ html {
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
 
+#bg-hero-puppy > div:last-child,
+#get-involved section p,
+nav a,
+#about-us a:hover,
+#bg-hero-puppy > div:last-child a:hover,
+#get-involved a:hover,
+main > div:nth-child(2) a:hover {
+        color: #fff;
+}
+
+body > header > div:first-child,
+main > div:last-child {
+        background-color: #BC5B3E;
+}
+
+#get-involved,
+main > div:last-child {
+        text-align: center;
+}
+
+
+#about-us a,
+#bg-hero-puppy > div:last-child a,
+#get-involved a {
+        border-radius: 2rem;
+}
+
+
+#about-us a,
+#bg-hero-puppy > div:last-child a,
+#get-involved a,
+main > div:nth-child(2) a  {
+        background-color: #fff;
+        padding: 0.25rem 1.25rem;
+}
+
+
+#about-us a:hover,
+#bg-hero-puppy > div:last-child a:hover,
+#get-involved,
+main > div:nth-child(2) a:hover {
+        background-color: #336992;
+}
+
+#about-us {
+        padding: 3rem 0;
+}
+
 #about-us div:first-child {
         background: url(../img/bg-two-people-dogs.jpg) no-repeat center;
-        -moz-background-size: contain;
-        -webkit-background-size: contain;
-        -o-background-size: contain;
-        -ms-background-size: contain;
-        background-size: contain;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+        padding: 6rem;
+}
+
+#get-involved {
+        padding: 3em 0;
 }
 
 #get-involved section:first-child div {
@@ -304,84 +360,83 @@ html {
         padding: 5rem;
 }
 
-
-
+main div:nth-child(2) section.bg-cream {
+        padding: 1.5rem 2rem;
+        margin-top: 4em;
+}
 
 main div:nth-child(2) div:first-child section:first-child div {
         background: url(../img/dog-tucker.jpg) no-repeat center;
-        -moz-background-size: contain;
-        -webkit-background-size: contain;
-        -o-background-size: contain;
-        -ms-background-size: contain;
-        background-size: contain;
-        padding: 4.5rem;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+        padding-top: 10rem;
 }
 
 main div:nth-child(2) div:first-child section:last-child div {
         background: url(../img/dog-tory.jpg) no-repeat center;
-        -moz-background-size: contain;
-        -webkit-background-size: contain;
-        -o-background-size: contain;
-        -ms-background-size: contain;
-        background-size: contain;
-        padding: 4.5rem;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+        padding-top: 10rem;
 }      
 
 main div:nth-child(2) div:nth-child(2) section:first-child div {
         background: url(../img/dog-inky.jpg) no-repeat center;
-        -moz-background-size: contain;
-        -webkit-background-size: contain;
-        -o-background-size: contain;
-        -ms-background-size: contain;
-        background-size: contain;
-        padding: 4.5rem;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+        padding-top: 10rem;
 }      
 
 main div:nth-child(2) div:nth-child(2) section:last-child div {
         background: url(../img/dog-pebbles.jpg) no-repeat center;
-        -moz-background-size: contain;
-        -webkit-background-size: contain;
-        -o-background-size: contain;
-        -ms-background-size: contain;
-        background-size: contain;
-        padding: 4.5rem;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+        padding-top: 10rem;
 }
 
 
 main div:nth-child(2) section:first-child div {
         background: url(../img/dog-bam-bam.jpg) no-repeat center;
-        -moz-background-size: contain;
-        -webkit-background-size: contain;
-        -o-background-size: contain;
-        -ms-background-size: contain;
-        background-size: contain;
-        padding: 4.5rem;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+        padding-top: 10rem;
 }
 
 main div:nth-child(2) section:last-child div {
         background: url(../img/dog-charlie.jpg) no-repeat center;
-        -moz-background-size: contain;
-        -webkit-background-size: contain;
-        -o-background-size: contain;
-        -ms-background-size: contain;
-        background-size: contain;
-        padding: 4.5rem;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+        padding-top: 10rem;
 }
 
+main > div:last-child div.row {
+        align-items: center;
+}
 
-
-
-
-
+main > div:last-child {
+        padding: 4em 0;
+}
 
 /* --NAVAGATION-- */
-nav a {
-        color: #fff;
-}
-
-a {
-        color: #000;
-        text-decoration: none;
+nav {
+        display: inline-block;
 }
 
 ul {
@@ -392,32 +447,52 @@ li {
         list-style-type: none;
 }
 
-address a {
-        color: #000;
+a {
         text-decoration: none;
+        color: #000;
+}
+
+#get-involved a {
+        border: 4px #000 solid;
+}
+
+#get-involved a:hover {
+        background-color: #000;
 }
 
 
 
-
-
-
-
 /* --HERO-- */
-body > header {
+#bg-hero-puppy {
         background: url(../img/hero-golden-puppy.jpg) no-repeat center;
         -moz-background-size: cover;
         -webkit-background-size: cover;
         -o-background-size: cover;
         -ms-background-size: cover;
         background-size: cover;
-        padding-bottom: 3em;
+        padding-bottom: 5em;
+}
+
+#bg-hero-puppy p:first-child {
+        text-transform: uppercase;
 }
 
 
 
 /* --FOOTER-- */
+footer {
+        background-color: #F8F4E3;
+        padding: 1.75em 0;
+}
 
+
+
+/* --FORM-- */
+select {
+        background-color: #F8F4E3;
+        border-radius: 2rem;
+        padding: 0.25rem;
+}
 
 /*--------------------------------------------------------------
     7.0 - UTILIY
@@ -427,6 +502,12 @@ body > header {
 .col-center {
         justify-content: center;
 }
+
+.bg-cream {
+        background-color: #F8F4E3;
+        padding: 1.5em 0;
+}
+
 
 
 
