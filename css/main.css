@@ -28,7 +28,6 @@
 *,
 *:after,
 *:before {
-        font-family: 'Anaheim', sans-serif;
         -o-box-sizing: border-box;
         -ms-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -37,8 +36,9 @@
 }
 
 html {
-        font-size: 1.5rem;
-        font-family: 'Amatic SC', cursive; /* ----- set font-size in font-shorthand ----- */
+        font-family: 'Anaheim', sans-serif;
+        font-size: 1.25rem;
+         /* ----- set font-size in font-shorthand w/ line-height ----- */
 }
 
 @media screen and (min-width: 768px) {
@@ -57,13 +57,57 @@ html {
 -------------------------------------------------------------- */
 h1,
 h2,
-h3 {
+h3,
+footer p:first-child {
+        font-family: 'Amatic SC', cursive;
+}
+
+h1,
+h2,
+h3,
+h2 + p span,
+footer p:first-child {
         text-transform: uppercase;
 }
 
 
+h2,
+h3 {
+        font-weight: 700;
+        margin: 0.25em 0;
+}
+
+/* -- TYPOGRAPHY --- */ 
+
+h2 + p {
+        margin-top: 0;
+}
 
 
+
+/* --FORM-- */
+
+form.row {
+        align-items: center;
+        margin-bottom: 3em;
+}
+
+fieldset {
+        border: none;
+        margin: 0;
+        padding: 0;
+}
+
+legend.col-lg-1 {
+        padding: 0;
+}
+
+select[class*="col-"] {
+        text-transform: uppercase;
+        background-color: #F8F4E3;
+        border-radius: 3rem;
+        padding: 0.1rem 1rem;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -273,17 +317,18 @@ nav a,
 #about-us a:hover,
 #bg-hero-puppy > div:last-child a:hover,
 #get-involved a:hover,
-main > div:nth-child(2) a:hover {
+main > div div:last-child a:hover {
         color: #fff;
 }
 
-body > header > div:first-child,
-main > div:last-child {
-        background-color: #BC5B3E;
+nav a:hover,
+a  {
+        color: #000;
 }
 
 #get-involved,
-main > div:last-child {
+main > div:last-child,
+header div.bg-cream div {
         text-align: center;
 }
 
@@ -298,7 +343,7 @@ main > div:last-child {
 #about-us a,
 #bg-hero-puppy > div:last-child a,
 #get-involved a,
-main > div:nth-child(2) a  {
+main > div div:last-child a  {
         background-color: #fff;
         padding: 0.25rem 1.25rem;
 }
@@ -307,12 +352,19 @@ main > div:nth-child(2) a  {
 #about-us a:hover,
 #bg-hero-puppy > div:last-child a:hover,
 #get-involved,
-main > div:nth-child(2) a:hover {
+main > div div:last-child a:hover {
         background-color: #336992;
 }
 
-#about-us {
-        padding: 3rem 0;
+main > div:last-child,
+main > div.bg {
+        padding: 4em 0;
+}
+
+
+#about-us,
+#get-involved {
+        padding: 3em 0;
 }
 
 #about-us div:first-child {
@@ -325,10 +377,6 @@ main > div:nth-child(2) a:hover {
         padding: 6rem;
 }
 
-#get-involved {
-        padding: 3em 0;
-}
-
 #get-involved section:first-child div {
         background: url(../img/illustration-donate.png) no-repeat center;
         -moz-background-size: contain;
@@ -336,7 +384,7 @@ main > div:nth-child(2) a:hover {
         -o-background-size: contain;
         -ms-background-size: contain;
         background-size: contain;
-        padding: 4rem;
+        padding: 5rem;
 }
 
 #get-involved section:nth-child(2) div {
@@ -346,7 +394,7 @@ main > div:nth-child(2) a:hover {
         -o-background-size: contain;
         -ms-background-size: contain;
         background-size: contain;
-        padding: 4rem;
+        padding: 5rem;
 
 }
 
@@ -372,7 +420,7 @@ main div:nth-child(2) div:first-child section:first-child div {
         -o-background-size: cover;
         -ms-background-size: cover;
         background-size: cover;
-        padding-top: 10rem;
+        padding-top: 14em;
 }
 
 main div:nth-child(2) div:first-child section:last-child div {
@@ -382,7 +430,7 @@ main div:nth-child(2) div:first-child section:last-child div {
         -o-background-size: cover;
         -ms-background-size: cover;
         background-size: cover;
-        padding-top: 10rem;
+        padding-top: 14em;
 }      
 
 main div:nth-child(2) div:nth-child(2) section:first-child div {
@@ -392,7 +440,7 @@ main div:nth-child(2) div:nth-child(2) section:first-child div {
         -o-background-size: cover;
         -ms-background-size: cover;
         background-size: cover;
-        padding-top: 10rem;
+        padding-top: 14em;
 }      
 
 main div:nth-child(2) div:nth-child(2) section:last-child div {
@@ -402,7 +450,7 @@ main div:nth-child(2) div:nth-child(2) section:last-child div {
         -o-background-size: cover;
         -ms-background-size: cover;
         background-size: cover;
-        padding-top: 10rem;
+        padding-top: 14em;
 }
 
 
@@ -413,7 +461,7 @@ main div:nth-child(2) section:first-child div {
         -o-background-size: cover;
         -ms-background-size: cover;
         background-size: cover;
-        padding-top: 10rem;
+        padding-top: 14em;
 }
 
 main div:nth-child(2) section:last-child div {
@@ -423,20 +471,23 @@ main div:nth-child(2) section:last-child div {
         -o-background-size: cover;
         -ms-background-size: cover;
         background-size: cover;
-        padding-top: 10rem;
+        padding-top: 14em;
 }
 
 main > div:last-child div.row {
         align-items: center;
 }
 
-main > div:last-child {
+main > div.bg-orange {
         padding: 4em 0;
 }
 
+
+
 /* --NAVAGATION-- */
-nav {
+nav li {
         display: inline-block;
+        margin-left: 0.25rem;
 }
 
 ul {
@@ -449,7 +500,6 @@ li {
 
 a {
         text-decoration: none;
-        color: #000;
 }
 
 #get-involved a {
@@ -463,6 +513,14 @@ a {
 
 
 /* --HERO-- */
+#bg-hero-puppy p:first-child {
+        font-family: 'Amatic SC', cursive;
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 0;
+}
+
 #bg-hero-puppy {
         background: url(../img/hero-golden-puppy.jpg) no-repeat center;
         -moz-background-size: cover;
@@ -477,6 +535,9 @@ a {
         text-transform: uppercase;
 }
 
+body > header > div.bg-orange > div.row {
+        align-items: center;
+}
 
 
 /* --FOOTER-- */
@@ -485,14 +546,22 @@ footer {
         padding: 1.75em 0;
 }
 
-
-
-/* --FORM-- */
-select {
-        background-color: #F8F4E3;
-        border-radius: 2rem;
-        padding: 0.25rem;
+footer a:hover {
+        color: #336992;
 }
+
+footer p,
+address ul {
+        margin: 0.25em 0;
+}
+
+
+
+
+
+
+
+
 
 /*--------------------------------------------------------------
     7.0 - UTILIY
@@ -508,6 +577,9 @@ select {
         padding: 1.5em 0;
 }
 
+.bg-orange {
+        background-color: #BC5B3E;
+}
 
 
 

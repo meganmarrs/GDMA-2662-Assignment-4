@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <div> <!--BG-ORANGE-->
+        <div class="bg-orange"> <!--BG-ORANGE-->
             <div class="wrapper row">
                 <div class="col-lg-4"> <!--col classes-->
                     <a href="index.html"><img src="./img/logo-ruff-rescue.png" alt="RUFF Rescue" width="180"></a>
@@ -22,7 +22,7 @@
     
                 <nav class="col-lg-7"> <!--col classes-->
                     <ul>
-                        <li><a href="index.html #about-us">About Us</a></li>
+                        <li><a href="index.html#about-us">About Us</a></li>
                         <li><a href="#">Adoption Center</a></li> 
                         <li><a href="#get-involved">Get Involved</a></li>
                         <li><a href="#news-events">News &amp; Events</a></li>
@@ -39,101 +39,105 @@
         </div>
     </header>
 
-    <main> <!--BG-ORANGE-->
-        <form class="wrapper row">
-            <legend class="col-lg-1">Filter:</legend>
-
-            <label for="gender" class="sr-only">Gender</label> <!--UPPERCASE-->
-            <select name="gender" id="gender" class=" col-lg-2"> <!--col classes-->
-                <option value="" selected disabled>Gender</option>
-                <option value="">Male</option>
-                <option value="">Female</option>
-            </select>
-
-            <label for="breed" class="sr-only">Breed</label> <!--UPPERCASE--> <!--How many BREED options should I have???-->
-            <select name="breed" id="breed" class="col-lg-2 "> <!--col classes-->
-                <option value="" selected disabled>Breed</option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-            </select>
-
-            <label for="size" class="sr-only">Size</label> <!--UPPERCASE--> <!--How many SIZE options should I have???-->
-            <select name="size" id="size" class="col-lg-2"> <!--col classes-->
-                <option value="" selected disabled>Size</option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-            </select>
-
-            <label for="age" class="sr-only">Age</label> <!--UPPERCASE--> <!--How many AGE options should I have???-->
-            <select name="age" id="age" class="col-lg-2"> <!--col classes-->
-                <option value="" selected disabled>Age</option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-            </select>
-        </form>
-
-        <div class="wrapper">
-            <div class="row">
-                <section class="bg-cream col-lg-5"> <!--col classes--> <!--BG-CREAM-->
-                    <div></div> <!--IMG-->
-                    <header>
-                        <h2>Tucker</h2>  <!--UPPERCASE-->
-                        <p><span>Male</span> | 5 years old</p>
-                    </header>
-                    <p><a href="">Read More</a></p> <!--BUTTON-->
-                </section>
-
-                <section class="bg-cream col-lg-5"> <!--col classes--> <!--BG-CREAM-->
-                    <div></div> <!--IMG-->
-                    <header>
-                        <h2>Tory</h2> <!--UPPERCASE-->
-                        <p><span>Female</span> | 1.5 years old</p>   
-                    </header>
-                    <p><a href="">Read More</a></p> <!--BUTTON-->
-                </section>
-            </div>
-
-            <div class="row">
-                <section class="bg-cream col-lg-5"> <!--col classes--> <!--BG-CREAM-->
-                    <div></div> <!--IMG-->
-                    <header>
-                        <h2>Inky</h2> <!--UPPERCASE-->  
-                        <p><span>Male</span> | 3 years old</p>
-                    </header>
-                    <p><a href="">Read More</a></p> <!--BUTTON-->
-                </section>
-
-                <section class="bg-cream col-lg-5"> <!--col classes--> <!--BG-CREAM-->
-                    <div></div> <!--IMG-->
-                    <header>
-                        <h2>Pebbles</h2>   <!--UPPERCASE--> 
-                        <p><span>Female</span> | 6 years old</p>
-                    </header>
-                    <p><a href="">Read More</a></p> <!--BUTTON-->
-                </section>
-            </div>
-
-            <div class="row">
-                <section class="bg-cream col-lg-5"> <!--col classes--> <!--BG-CREAM-->
-                    <div></div> <!--IMG-->
-                    <header>
-                        <h2>Bam Bam</h2>     <!--UPPERCASE-->
-                        <p> <span>Male</span> | 6 years old</p>
-                    </header>
-                    <p><a href="">Read More</a></p> <!--BUTTON-->
-                </section>
-
-                <section class="bg-cream col-lg-5"> <!--col classes--> <!--BG-CREAM-->
-                    <div></div> <!--IMG-->
-                    <header>
-                        <h2>Charlie</h2>   <!--UPPERCASE-->  
-                        <p><span>Male</span> | 7 years old</p>
-                    </header>
-                    <p><a href="">Read More</a></p> <!--BUTTON-->
-                </section>
+    <main> 
+        <div class="bg-orange"> <!--BG-ORANGE-->
+            <form class="wrapper row">
+                <fieldset><legend class="col-lg-1">Filter:</legend></fieldset>
+    
+                <label for="gender" class="sr-only">Gender</label> <!--UPPERCASE-->
+                <select name="gender" id="gender" class=" col-lg-2"> <!--col classes-->
+                    <option value="" selected disabled>Gender</option>
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                </select>
+    
+                <label for="breed" class="sr-only">Breed</label> <!--UPPERCASE--> <!--How many BREED options should I have???-->
+                <select name="breed" id="breed" class="col-lg-2 "> <!--col classes-->
+                    <option value="" selected disabled>Breed</option>
+                    <option value="">French Bulldog</option>
+                    <option value="">Golden Lab</option>
+                    <option value="">Terriar</option>
+                </select>
+    
+                <label for="size" class="sr-only">Size</label> <!--UPPERCASE--> <!--How many SIZE options should I have???-->
+                <select name="size" id="size" class="col-lg-2"> <!--col classes-->
+                    <option value="" selected disabled>Size</option>
+                    <option value="">Small</option>
+                    <option value="">Medium</option>
+                    <option value="">Large</option>
+                </select>
+    
+                <label for="age" class="sr-only">Age</label> <!--UPPERCASE--> <!--How many AGE options should I have???-->
+                <select name="age" id="age" class="col-lg-2"> <!--col classes-->
+                    <option value="" selected disabled>Age</option>
+                    <option value="">1-2 Years Old</option>
+                    <option value="">3-4 Years Old</option>
+                    <option value="">5-6 Years Old</option>
+                    <option value="">7-8 Years Old</option>
+                    <option value="">9-10 Years Old</option>
+                </select>
+            </form>
+    
+            <div class="wrapper">
+                <div class="row">
+                    <section class="bg-cream col-lg-5"> <!--col classes--> <!--BG-CREAM-->
+                        <div></div> <!--IMG-->
+                        <header>
+                            <h2>Tucker</h2>  <!--UPPERCASE-->
+                            <p><span>Male</span> | 5 years old</p>
+                        </header>
+                        <p><a href="#">Read More</a></p> <!--BUTTON-->
+                    </section>
+    
+                    <section class="bg-cream col-lg-5"> <!--col classes--> <!--BG-CREAM-->
+                        <div></div> <!--IMG-->
+                        <header>
+                            <h2>Tory</h2> <!--UPPERCASE-->
+                            <p><span>Female</span> | 1.5 years old</p>   
+                        </header>
+                        <p><a href="#">Read More</a></p> <!--BUTTON-->
+                    </section>
+                </div>
+    
+                <div class="row">
+                    <section class="bg-cream col-lg-5"> <!--col classes--> <!--BG-CREAM-->
+                        <div></div> <!--IMG-->
+                        <header>
+                            <h2>Inky</h2> <!--UPPERCASE-->  
+                            <p><span>Male</span> | 3 years old</p>
+                        </header>
+                        <p><a href="#">Read More</a></p> <!--BUTTON-->
+                    </section>
+    
+                    <section class="bg-cream col-lg-5"> <!--col classes--> <!--BG-CREAM-->
+                        <div></div> <!--IMG-->
+                        <header>
+                            <h2>Pebbles</h2>   <!--UPPERCASE--> 
+                            <p><span>Female</span> | 6 years old</p>
+                        </header>
+                        <p><a href="#">Read More</a></p> <!--BUTTON-->
+                    </section>
+                </div>
+    
+                <div class="row">
+                    <section class="bg-cream col-lg-5"> <!--col classes--> <!--BG-CREAM-->
+                        <div></div> <!--IMG-->
+                        <header>
+                            <h2>Bam Bam</h2>     <!--UPPERCASE-->
+                            <p> <span>Male</span> | 6 years old</p>
+                        </header>
+                        <p><a href="#">Read More</a></p> <!--BUTTON-->
+                    </section>
+    
+                    <section class="bg-cream col-lg-5"> <!--col classes--> <!--BG-CREAM-->
+                        <div></div> <!--IMG-->
+                        <header>
+                            <h2>Charlie</h2>   <!--UPPERCASE-->  
+                            <p><span>Male</span> | 7 years old</p>
+                        </header>
+                        <p><a href="#">Read More</a></p> <!--BUTTON-->
+                    </section>
+                </div>
             </div>
         </div>
 
@@ -146,7 +150,7 @@
                         <h2>Donate</h2> <!--UPPERCASE-->
                     </header>
                     <p>You can help us make an even greater impact by donating items through Wish List or adopting a pet from a shelter or rescue near you.</p>
-                    <p><a href="">Donate</a></p> <!--BUTTON-->
+                    <p><a href="#">Donate</a></p> <!--BUTTON-->
                 </section> 
                 
                 <section class=" col-lg-4"> <!--col classes-->
@@ -155,7 +159,7 @@
                         <h2>Volunteer</h2> <!--UPPERCASE-->
                     </header>
                     <p> We welcome and respect our volunteers' unique identities, diverse backgrounds and experiences to build an inclusive animal welfare movement.</p>
-                    <p><a href="">Volunteer</a></p> <!--BUTTON-->
+                    <p><a href="#">Volunteer</a></p> <!--BUTTON-->
                 </section>
 
                 <section class=" col-lg-4"> <!--col classes-->
@@ -164,7 +168,7 @@
                         <h2>Foster</h2> <!--UPPERCASE-->  
                     </header>
                     <p>If we learn of an animal in need, we will respond if we are at all able. We do not have a shelter/sanctuary or facility, so foster families are extremely valuable to our rescue.</p>
-                    <p><a href="">Foster</a></p> <!--BUTTON-->
+                    <p><a href="#">Foster</a></p> <!--BUTTON-->
                 </section> 
             </div>
         </div>
@@ -172,14 +176,16 @@
 
     <footer> <!--BG-CREAM-->
         <div class="wrapper row">
-            <address class="col-lg-4"> <!--col classes-->
+            <section class="col-lg-4"> <!--col classes-->
                 <h3>Contact Us</h3>
-                <ul>
-                    <li>R.u.F.F. Rescue, Inc.</li>  
-                    <li>Faith Jones, President</li>
-                    <li><a href="mailto:faith@ruff-rescue.com">faith@ruff-rescue.com</a><br></li> <!--EMAIL-->
-                </ul>
-            </address>
+                <address>
+                    <ul>
+                        <li>R.u.F.F. Rescue, Inc.</li>  
+                        <li>Faith Jones, President</li>
+                        <li><a href="mailto:faith@ruff-rescue.com">faith@ruff-rescue.com</a><br></li> <!--EMAIL-->
+                    </ul>
+                </address>
+            </section>
 
             <section class="col-lg-8" id="news-events">
                 <h3>Events</h3> <!--UPPERCASE-->
