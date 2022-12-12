@@ -86,10 +86,15 @@ h2 + p {
 
 
 /* --FORM-- */
+form > div:nth-child(2) {
+        margin: 2em 0;
+}
 
 form.row {
+        text-align: center;
         align-items: center;
         margin-bottom: 3em;
+        display: contents;
 }
 
 fieldset {
@@ -98,8 +103,9 @@ fieldset {
         padding: 0;
 }
 
-legend.col-lg-1 {
+legend {
         padding: 0;
+        font-size: 1.5em;
 }
 
 select[class*="col-"] {
@@ -367,6 +373,10 @@ main > div.bg {
         padding: 3em 0;
 }
 
+#about-us {
+        text-align: center;
+}
+
 #about-us div:first-child {
         background: url(../img/bg-two-people-dogs.jpg) no-repeat center;
         -moz-background-size: cover;
@@ -485,6 +495,15 @@ main > div.bg-orange {
 
 
 /* --NAVAGATION-- */
+nav ul {
+        margin-right: 0.25em;
+        font-size: 0.7em;
+}
+
+body > header > div > div.row {
+        justify-content: center;
+}
+
 nav li {
         display: inline-block;
         margin-left: 0.25rem;
@@ -508,6 +527,11 @@ a {
 
 #get-involved a:hover {
         background-color: #000;
+}
+
+body > header > div.bg-orange > div.row {
+        align-items: center;
+        text-align: center;
 }
 
 
@@ -535,15 +559,21 @@ a {
         text-transform: uppercase;
 }
 
-body > header > div.bg-orange > div.row {
-        align-items: center;
+body > header div:last-child div {
+        text-align: center;
 }
+
 
 
 /* --FOOTER-- */
 footer {
+        text-align: center;
         background-color: #F8F4E3;
         padding: 1.75em 0;
+}
+
+footer div.row {
+        justify-content: center;
 }
 
 footer a:hover {
@@ -560,7 +590,48 @@ address ul {
 
 
 
+@media screen and (min-width: 768px) {  /* ----- Medium ----- */
+        
+}
 
+@media screen and (min-width: 1024px) {  /* ----- Large ----- */
+
+        #about-us {
+                text-align: left;
+        }        
+        
+        /* --NAVAGATION-- */
+
+        nav ul {
+                font-size: 1rem;
+        }
+
+        body > header > div > div.row {
+                justify-content: space-between;
+        }
+        
+        body > header div.bg-orange div.col-lg-4 {
+                text-align: left;
+                padding-left: 0;
+        }
+
+        body > header nav {
+                text-align: right;
+                padding-right: 0;
+        }
+
+        /* --FOOTER-- */
+
+        footer {
+                text-align: left;
+        }
+
+
+        /* --HERO-- */
+        body > header div:last-child div.col-lg-6 {
+                text-align: left;
+        }
+}
 
 
 /*--------------------------------------------------------------

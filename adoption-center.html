@@ -16,11 +16,11 @@
     <header>
         <div class="bg-orange"> <!--BG-ORANGE-->
             <div class="wrapper row">
-                <div class="col-lg-4"> <!--col classes-->
+                <div class="col-sm-12 col-lg-4"> <!--col classes-->
                     <a href="index.html"><img src="./img/logo-ruff-rescue.png" alt="RUFF Rescue" width="180"></a>
                 </div>
     
-                <nav class="col-lg-7"> <!--col classes-->
+                <nav class="col-sm-12 col-lg-8"> <!--col classes-->
                     <ul>
                         <li><a href="index.html#about-us">About Us</a></li>
                         <li><a href="#">Adoption Center</a></li> 
@@ -42,45 +42,49 @@
     <main> 
         <div class="bg-orange"> <!--BG-ORANGE-->
             <form class="wrapper row">
-                <fieldset><legend class="col-lg-1">Filter:</legend></fieldset>
+                <fieldset><legend class="col-sm-12 col-lg-1">Filter:</legend></fieldset>
     
-                <label for="gender" class="sr-only">Gender</label> <!--UPPERCASE-->
-                <select name="gender" id="gender" class=" col-lg-2"> <!--col classes-->
-                    <option value="" selected disabled>Gender</option>
-                    <option value="">Male</option>
-                    <option value="">Female</option>
-                </select>
+                <div>
+                    <label for="gender" class="sr-only">Gender</label> <!--UPPERCASE-->
+                    <select name="gender" id="gender" class="col-sm-5 col-lg-2"> <!--col classes-->
+                        <option value="" selected disabled>Gender</option>
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                    </select>
+        
+                    <label for="breed" class="sr-only">Breed</label> <!--UPPERCASE--> <!--How many BREED options should I have???-->
+                    <select name="breed" id="breed" class="col-sm-5 col-lg-2 "> <!--col classes-->
+                        <option value="" selected disabled>Breed</option>
+                        <option value="">French Bulldog</option>
+                        <option value="">Golden Lab</option>
+                        <option value="">Terriar</option>
+                    </select>
+                </div>
     
-                <label for="breed" class="sr-only">Breed</label> <!--UPPERCASE--> <!--How many BREED options should I have???-->
-                <select name="breed" id="breed" class="col-lg-2 "> <!--col classes-->
-                    <option value="" selected disabled>Breed</option>
-                    <option value="">French Bulldog</option>
-                    <option value="">Golden Lab</option>
-                    <option value="">Terriar</option>
-                </select>
-    
-                <label for="size" class="sr-only">Size</label> <!--UPPERCASE--> <!--How many SIZE options should I have???-->
-                <select name="size" id="size" class="col-lg-2"> <!--col classes-->
-                    <option value="" selected disabled>Size</option>
-                    <option value="">Small</option>
-                    <option value="">Medium</option>
-                    <option value="">Large</option>
-                </select>
-    
-                <label for="age" class="sr-only">Age</label> <!--UPPERCASE--> <!--How many AGE options should I have???-->
-                <select name="age" id="age" class="col-lg-2"> <!--col classes-->
-                    <option value="" selected disabled>Age</option>
-                    <option value="">1-2 Years Old</option>
-                    <option value="">3-4 Years Old</option>
-                    <option value="">5-6 Years Old</option>
-                    <option value="">7-8 Years Old</option>
-                    <option value="">9-10 Years Old</option>
-                </select>
+                <div>
+                    <label for="size" class="sr-only">Size</label> <!--UPPERCASE--> <!--How many SIZE options should I have???-->
+                    <select name="size" id="size" class="col-sm-5 col-lg-2"> <!--col classes-->
+                        <option value="" selected disabled>Size</option>
+                        <option value="">Small</option>
+                        <option value="">Medium</option>
+                        <option value="">Large</option>
+                    </select>
+        
+                    <label for="age" class="sr-only">Age</label> <!--UPPERCASE--> <!--How many AGE options should I have???-->
+                    <select name="age" id="age" class="col-sm-5 col-lg-2"> <!--col classes-->
+                        <option value="" selected disabled>Age</option>
+                        <option value="">1-2 Years Old</option>
+                        <option value="">3-4 Years Old</option>
+                        <option value="">5-6 Years Old</option>
+                        <option value="">7-8 Years Old</option>
+                        <option value="">9-10 Years Old</option>
+                    </select>
+                </div>
             </form>
     
             <div class="wrapper">
                 <div class="row">
-                    <section class="bg-cream col-lg-5"> <!--col classes--> <!--BG-CREAM-->
+                    <section class="bg-cream col-sm-12 col-lg-5"> <!--col classes--> <!--BG-CREAM-->
                         <div></div> <!--IMG-->
                         <header>
                             <h2>Tucker</h2>  <!--UPPERCASE-->
@@ -89,7 +93,7 @@
                         <p><a href="#">Read More</a></p> <!--BUTTON-->
                     </section>
     
-                    <section class="bg-cream col-lg-5"> <!--col classes--> <!--BG-CREAM-->
+                    <section class="bg-cream col-sm-12 col-lg-5"> <!--col classes--> <!--BG-CREAM-->
                         <div></div> <!--IMG-->
                         <header>
                             <h2>Tory</h2> <!--UPPERCASE-->
@@ -100,7 +104,7 @@
                 </div>
     
                 <div class="row">
-                    <section class="bg-cream col-lg-5"> <!--col classes--> <!--BG-CREAM-->
+                    <section class="bg-cream col-sm-12 col-lg-5"> <!--col classes--> <!--BG-CREAM-->
                         <div></div> <!--IMG-->
                         <header>
                             <h2>Inky</h2> <!--UPPERCASE-->  
@@ -109,7 +113,7 @@
                         <p><a href="#">Read More</a></p> <!--BUTTON-->
                     </section>
     
-                    <section class="bg-cream col-lg-5"> <!--col classes--> <!--BG-CREAM-->
+                    <section class="bg-cream col-sm-12 col-lg-5"> <!--col classes--> <!--BG-CREAM-->
                         <div></div> <!--IMG-->
                         <header>
                             <h2>Pebbles</h2>   <!--UPPERCASE--> 
@@ -120,7 +124,7 @@
                 </div>
     
                 <div class="row">
-                    <section class="bg-cream col-lg-5"> <!--col classes--> <!--BG-CREAM-->
+                    <section class="bg-cream col-sm-12 col-lg-5"> <!--col classes--> <!--BG-CREAM-->
                         <div></div> <!--IMG-->
                         <header>
                             <h2>Bam Bam</h2>     <!--UPPERCASE-->
@@ -129,7 +133,7 @@
                         <p><a href="#">Read More</a></p> <!--BUTTON-->
                     </section>
     
-                    <section class="bg-cream col-lg-5"> <!--col classes--> <!--BG-CREAM-->
+                    <section class="bg-cream col-sm-12 col-lg-5"> <!--col classes--> <!--BG-CREAM-->
                         <div></div> <!--IMG-->
                         <header>
                             <h2>Charlie</h2>   <!--UPPERCASE-->  
@@ -144,7 +148,7 @@
 
         <div id="get-involved"> <!--BG-TEAL-->
             <div class="wrapper row">
-                <section class=" col-lg-4"> <!--col classes-->
+                <section class="col-sm-12 col-lg-4"> <!--col classes-->
                     <div></div> <!--IMG--> 
                     <header>
                         <h2>Donate</h2> <!--UPPERCASE-->
@@ -153,7 +157,7 @@
                     <p><a href="#">Donate</a></p> <!--BUTTON-->
                 </section> 
                 
-                <section class=" col-lg-4"> <!--col classes-->
+                <section class="col-sm-12 col-lg-4"> <!--col classes-->
                     <div></div> <!--IMG-->
                     <header> 
                         <h2>Volunteer</h2> <!--UPPERCASE-->
@@ -162,7 +166,7 @@
                     <p><a href="#">Volunteer</a></p> <!--BUTTON-->
                 </section>
 
-                <section class=" col-lg-4"> <!--col classes-->
+                <section class="col-sm-12 col-lg-4"> <!--col classes-->
                     <div></div> <!--IMG-->
                     <header>
                         <h2>Foster</h2> <!--UPPERCASE-->  
@@ -176,7 +180,7 @@
 
     <footer> <!--BG-CREAM-->
         <div class="wrapper row">
-            <section class="col-lg-4"> <!--col classes-->
+            <section class="col-sm-12 col-lg-4"> <!--col classes-->
                 <h3>Contact Us</h3>
                 <address>
                     <ul>
@@ -187,7 +191,7 @@
                 </address>
             </section>
 
-            <section class="col-lg-8" id="news-events">
+            <section class="col-sm-12 col-lg-8" id="news-events">
                 <h3>Events</h3> <!--UPPERCASE-->
                 <p>Pick-A-Pooch Ralston Arena, 7300 Q Street, Ralston, NE 7/21/2019 10:00AM &ndash; 4:00PM</p>
             </section>  
